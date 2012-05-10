@@ -1,0 +1,77 @@
+html, body{ width: 100%; height: 100%; overflow:hidden; }
+
+#container{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 100px 0;
+}
+
+#main {
+	margin: auto;
+	
+	border-radius: 3px;
+	
+	box-shadow: 0 0 3px #ccc;
+	
+	border: 1px solid #666;
+	
+	background: #ffffff; /* old browsers */
+	background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* opera */
+	
+	opacity: 0.95;
+}
+
+.block {
+
+	border: 1px solid #bbb;
+	color: #ddd;
+	
+	border-radius: 3px;				
+	box-shadow: 1px 1px 3px #999;
+	
+	display:table-cell;
+	
+	text-align: center;
+	
+	text-shadow: 0 0 2px #ccc;
+}
+
+.ball, .paddle {
+	box-shadow: 0 0 3px #ccc;	
+	
+	background: #f6e6b4; /* old browsers */
+	background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f6e6b4), color-stop(100%,#ed9017)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* opera */
+}
+
+.paddle {
+	border-radius: 5px;
+	box-shadow: 0 2px 3px #999;	
+	
+/*
+	-webkit-transition-property:width, left; 
+	-webkit-transition-duration: 1s, 0.1s; 
+	-webkit-transition-timing-function: linear, ease-out;
+*/
+}
+
+.paddle.fire {	
+	background: #f6e6b4; /* old browsers */
+	background: -moz-linear-gradient(top, #f6e6b4 0%, #ed9017 100%); /* firefox */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f09999), color-stop(100%,#ff3333)); /* webkit */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6e6b4', endColorstr='#ed9017',GradientType=0 ); /* ie */
+	background: -o-linear-gradient(top, #f6e6b4 0%,#ed9017 100%); /* opera */
+}
+
+.catchable {
+	color: #fff;
+	text-align: center;
+	box-shadow: 0 2px 3px #666;
+	padding: 0px;
+}
